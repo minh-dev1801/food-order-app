@@ -7,8 +7,42 @@
     background: linear-gradient(to right, #ff8a05, #f9b331);
   }
 
+  .header-gradient-orange {
+    background: linear-gradient(to right, #f9572a, #ff9b05);
+  }
+
+  .text-header-gradient {
+    background: linear-gradient(to right, #f9572a, #ffc905);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .header-gradient-orange-hover {
+    background: linear-gradient(to right, #fd4715, #f9b241);
+  }
+
   .text-shadow-orange {
     text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .drop-shadow-logo {
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+  }
+
+  .transform-slideshow {
+    transform: scale(1.1) translateX(-1rem) rotate(-5deg);
+  }
+
+  .transform-slideshow-active {
+    transform: scale(1) translateX(0) rotate(0);
+  }
+
+  .box-shadow-slideshow {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
   }
 }
 
