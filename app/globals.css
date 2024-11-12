@@ -53,6 +53,25 @@
   .text-montserrat {
     font-family: 'Montserrat', sans-serif;
   }
+
+  .grid-template-meals {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minimax(20rem, 1fr));
+    grid-gap: 5rem;
+  }
+
+  .shadow-meal-item {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .background-meal-item {
+    background: linear-gradient(to right, #2c1e19, #25200f);
+  }
+
+  .background-meal-item-hover {
+    background: linear-gradient(to right, #fd4715, #f9b241);
+    box-shadow: 0 0 12px rgba(242, 100, 18, 0.8);
+  }
 }
 
 body {
