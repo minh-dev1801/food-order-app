@@ -163,14 +163,14 @@ const dummyMeals = [
 db.prepare(
   `
   CREATE TABLE IF NOT EXISTS meals (
-    id INTERGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     slug TEXT NOT NULL UNIQUE,
     title TEXT NOT NULL,
     image TEXT NOT NULL,
     summary TEXT NOT NULL,
     instructions TEXT NOT NULL,
     creator TEXT NOT NULL,
-    creator_email TEXT NOT NULL,
+    creator_email TEXT NOT NULL
   )
   `
 ).run();
@@ -184,7 +184,7 @@ function initData() {
       summary,
       instructions,
       creator,
-      creator_email,
+      creator_email
     ) VALUES (
       @slug,
       @title,
@@ -192,7 +192,7 @@ function initData() {
       @summary,
       @instructions,
       @creator,
-      @creator_email,
+      @creator_email
     )
     `);
 

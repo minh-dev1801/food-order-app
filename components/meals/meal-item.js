@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function MealItem({ title, slug, image, summary, creator }) {
   return (
-    <article className="shadow-meal-item background-meal-item flex flex-col justify-between rounded-[4px] text-[#ddd6cb] transition-all duration-300 ease-in-out">
+    <article className="shadow-meal-item background-meal-item flex h-full flex-col justify-between overflow-hidden rounded-[4px] text-[#ddd6cb] transition-all duration-300 ease-in-out">
       <header>
         <div className="relative h-[15rem]">
           <Image className="object-cover" src={image} alt={title} fill />
