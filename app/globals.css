@@ -4,6 +4,68 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .loading {
+    animation: loading 1.2s ease-in-out infinite;
+  }
+  .animation-header-text {
+    animation: fade-slide-in-from-left 1s ease-out forwards;
+  }
+
+  .animation-instructions {
+    animation: fade-slide-in-from-bottom 1s ease-out forwards;
+  }
+
+  .animation-image {
+    animation: fade-slide-in-from-right 1s ease-out forwards;
+  }
+
+  @keyframes loading {
+    0% {
+      color: #e9e9e9;
+    }
+    50% {
+      color: #b89b84;
+    }
+    100% {
+      color: #e9e9e9;
+    }
+  }
+
+  @keyframes fade-slide-in-from-bottom {
+    0% {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-slide-in-from-right {
+    0% {
+      opacity: 0;
+      transform: translateX(-1rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-slide-in-from-left {
+    0% {
+      opacity: 0;
+      transform: translateX(1rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
 @layer utilities {
   .text-gradient-orange {
     background: linear-gradient(to right, #ff8a05, #f9b331);
@@ -32,6 +94,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .text-shadow-creator {
+    text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
   }
 
   .drop-shadow-logo {
