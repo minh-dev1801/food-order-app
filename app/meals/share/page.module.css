@@ -3,12 +3,14 @@
 }
 
 .label {
-  @apply text-montserrat mb-2 block text-lg font-bold uppercase text-[#b3aea5];
+  @apply mb-2 block text-lg font-bold uppercase text-[#b3aea5];
+  font-family: 'Montserrat', sans-serif;
 }
 
 .input,
 .textarea {
-  @apply text-montserrat block w-full rounded border border-[#454952] bg-[#1c2027] px-4 py-2 text-xl text-[#ddd6cb];
+  @apply block w-full rounded border border-[#454952] bg-[#1c2027] px-4 py-2 text-xl text-[#ddd6cb];
+  font-family: 'Montserrat', sans-serif;
 }
 
 .input:focus,
