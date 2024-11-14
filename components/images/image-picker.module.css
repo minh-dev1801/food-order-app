@@ -1,0 +1,23 @@
+.controls {
+  @apply mb-4 flex items-start gap-6;
+}
+
+.picker .input {
+  display: none !important;
+}
+
+.button {
+  @apply cursor-pointer rounded-sm border-0 bg-[#a4abb9] px-6 py-2 text-black;
+}
+
+.preview {
+  @apply relative flex h-[10rem] w-[10rem] items-center justify-center border-2 border-[#a4abb9] text-center text-[#a4abb9];
+}
+
+.preview p {
+  padding: 1rem;
+}
+
+.preview img {
+  object-fit: cover;
+}

@@ -1,0 +1,18 @@
+.form {
+  max-width: 50rem;
+}
+
+.label {
+  @apply text-montserrat mb-2 block text-lg font-bold uppercase text-[#b3aea5];
+}
+
+.input,
+.textarea {
+  @apply text-montserrat block w-full rounded border border-[#454952] bg-[#1c2027] px-4 py-2 text-xl text-[#ddd6cb];
+}
+
+.input:focus,
+.textarea:focus {
+  outline-color: #f99f2a;
+  background-color: #1f252d;
+}
