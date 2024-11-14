@@ -1,10 +1,8 @@
 'use client';
-
-import Link from 'next/link';
 import logoImage from '@/assets/logo.png';
+import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-
 import MainHeaderBackground from './main-header-background';
 import NavLink from './nav-link';
 
