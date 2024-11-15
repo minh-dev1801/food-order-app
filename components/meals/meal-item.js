@@ -1,12 +1,19 @@
+'use client';
+
+import { CldImage } from 'next-cloudinary';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function MealItem({ title, slug, image, summary, creator }) {
   return (
     <article className="shadow-meal-item background-meal-item flex h-full flex-col justify-between overflow-hidden rounded-[4px] text-[#ddd6cb] transition-all duration-300 ease-in-out">
       <header>
         <div className="relative h-[15rem]">
-          <Image className="object-cover" src={image} alt={title} fill />
+          <CldImage
+            className="object-cover"
+            src={`https://res.cloudinary.com/dmsrjqk4y/image/upload/v1731675807/${image}`}
+            alt={title}
+            fill
+          />
         </div>
         <div className="px-4 pt-2">
           <h2 className="text-montserrat text-2xl">{title}</h2>

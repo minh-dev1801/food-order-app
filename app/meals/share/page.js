@@ -6,7 +6,7 @@ import ImagePicker from '@/components/images/image-picker';
 
 import classes from './page.module.css';
 import { shareMeal } from '@/lib/actions';
-import MealsFormSubmit from '@/components/meals-form-submit';
+import MealsFormSubmit from '@/components/meals/meals-form-submit';
 
 export default function ShareMealPage() {
   const [state, formAction] = useActionState(shareMeal, { message: null });

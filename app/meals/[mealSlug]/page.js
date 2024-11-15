@@ -1,13 +1,29 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import { getMeal } from '@/lib/meals';
-import Image from 'next/image';
+import { CldImage } from 'next-cloudinary';
 import { notFound } from 'next/navigation';
 
 export default function MealDetailPage({ params }) {
-  const meal = getMeal(params.mealSlug);
+  const [meal, setMeal] = useState(null);
 
-  if(!meal) {
-    notFound()
-  }
+  useEffect(() => {
+    const fetchMeal = async () => {
+      const { mealSlug } = params;
+      const mealData = await getMeal(mealSlug);
+
+      if (!mealData) {
+        notFound();
+      } else {
+        setMeal(mealData);
+      }
+    };
+
+    fetchMeal();
+  }, [params]);
+
+  if (!meal) return <p>Loading...</p>;
 
   meal.instructions = meal.instructions.replace(/\n/g, '<br />');
 
@@ -15,9 +31,9 @@ export default function MealDetailPage({ params }) {
     <>
       <header className="m-w-[80rem] flex justify-center gap-12 px-4 py-8">
         <div className="relative h-[20rem] w-[30rem]">
-          <Image
+          <CldImage
             className="animation-image rounded-lg object-cover shadow-sm"
-            src={meal.image}
+            src={`https://res.cloudinary.com/dmsrjqk4y/image/upload/v1731675807/${meal.image}`}
             alt={meal.title}
             fill
           />

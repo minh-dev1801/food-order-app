@@ -6,7 +6,7 @@ const dummyMeals = [
   {
     title: 'Juicy Cheese Burger',
     slug: 'juicy-cheese-burger',
-    image: '/images/burger.jpg',
+    image: 'burger_dzmoce.jpg',
     summary:
       'A mouth-watering burger with a juicy beef patty and melted cheese, served in a soft bun.',
     instructions: `
@@ -28,7 +28,7 @@ const dummyMeals = [
   {
     title: 'Spicy Curry',
     slug: 'spicy-curry',
-    image: '/images/curry.jpg',
+    image: 'curry_mlopzz.jpg',
     summary: 'A rich and spicy curry, infused with exotic spices and creamy coconut milk.',
     instructions: `
       1. Chop vegetables:
@@ -52,7 +52,7 @@ const dummyMeals = [
   {
     title: 'Homemade Dumplings',
     slug: 'homemade-dumplings',
-    image: '/images/dumplings.jpg',
+    image: 'dumplings_zd6mfm.jpg',
     summary: 'Tender dumplings filled with savory meat and vegetables, steamed to perfection.',
     instructions: `
       1. Prepare the filling:
@@ -73,7 +73,7 @@ const dummyMeals = [
   {
     title: 'Classic Mac n Cheese',
     slug: 'classic-mac-n-cheese',
-    image: '/images/macncheese.jpg',
+    image: 'macncheese_z66xqw.jpg',
     summary: "Creamy and cheesy macaroni, a comforting classic that's always a crowd-pleaser.",
     instructions: `
       1. Cook the macaroni:
@@ -97,7 +97,7 @@ const dummyMeals = [
   {
     title: 'Authentic Pizza',
     slug: 'authentic-pizza',
-    image: '/images/pizza.jpg',
+    image: 'pizza_mr6ts5.jpg',
     summary: 'Hand-tossed pizza with a tangy tomato sauce, fresh toppings, and melted cheese.',
     instructions: `
       1. Prepare the dough:
@@ -118,7 +118,7 @@ const dummyMeals = [
   {
     title: 'Wiener Schnitzel',
     slug: 'wiener-schnitzel',
-    image: '/images/schnitzel.jpg',
+    image: 'schnitzel_pyw3d0.jpg',
     summary: 'Crispy, golden-brown breaded veal cutlet, a classic Austrian dish.',
     instructions: `
       1. Prepare the veal:
@@ -139,7 +139,7 @@ const dummyMeals = [
   {
     title: 'Fresh Tomato Salad',
     slug: 'fresh-tomato-salad',
-    image: '/images/tomato-salad.jpg',
+    image: 'tomato-salad_ukestx.jpg',
     summary:
       'A light and refreshing salad with ripe tomatoes, fresh basil, and a tangy vinaigrette.',
     instructions: `
